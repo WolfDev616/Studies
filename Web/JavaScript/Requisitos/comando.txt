@@ -1,0 +1,133 @@
+Comando bash para criar arquivos:
+
+
+for i in {1..9}; do
+  printf -v n "%02d" "$i"
+  touch "requisito$n.js"
+done
+
+
+
+Módulo Projeto Laboratório de Fundamentos
+Lembre-se de que os requisitos podem ser resolvidos com diferentes abordagens, e nosso
+gabarito é apenas uma forma de implementação.
+
+Requisito 1: : Crie uma função que receba dois números inteiros e retorne a soma deles.
+Função: somar
+Exemplo Entrada: // somar(5, 3);
+Exemplo Saída: // 8
+
+Requisito 2: Crie uma função que receba um array de nomes e retorne esse array ordenado
+em ordem alfabética. Função: ordenarNomes
+Exemplo Entrada: // ordenarNomes(['Ana', 'Elias', 'Carlos', 'Beatriz']);
+Exemplo Saída: // ['Ana', 'Beatriz', 'Carlos', ‘Elias’]
+
+Requisito 3: Crie uma função que receba dois valores e retorne verdadeiro se ambos forem
+considerados "truthy".
+Função: compararValores
+Exemplo Entrada: // compararValores(5, "texto");
+// compararValores(0, "texto");
+Exemplo Saída: // true
+// false
+
+Requisito 4: Crie uma função que receba um valor investido e uma taxa de juros e retorne o
+rendimento obtido com esse investimento.
+Função: calcularRendimento
+Exemplo Entrada: //calcularRendimento(1000, 5);
+Exemplo Saída: // 50
+
+Requisito 5: Crie uma função que receba uma frase como parâmetro e retorne um array
+contendo as palavras que compõem essa frase, separadas por espaços.
+Função: dividirFrase
+Exemplo Entrada: // dividirFrase("Esta é uma frase de exemplo.");
+Exemplo Saída: // ["Esta", "é", "uma", "frase", "de", "exemplo."]
+
+Requisito 6: Crie uma função que receba o número de vitórias e empates de um time e
+retorne a quantidade total de pontos, sabendo que cada vitória vale 3 pontos e cada empate
+vale 1 ponto.
+Função: calcularPontos
+Exemplo Entrada: // calcularPontos(5, 2);
+Exemplo Saída: // 17
+
+Exercício 7: Crie uma função que receba uma frase e retorne a quantidade de vogais contidas
+nela.
+Função: contarVogais.
+Exemplo Entrada: // contarVogais("Olá, tudo bem?");
+Exemplo Saída: // 5
+
+Requisito 8: Crie uma função que receba um array de gastos e retorne a quantidade de vezes
+que o maior gasto aparece nesse array.
+Função: maiorGasto
+Exemplo Entrada: // maiorGasto([10, 5, 20, 15]);
+Exemplo Saída: // 20
+
+Requisito 9: Crie uma função que receba um array de números e retorne a média desses
+números.
+Função: calcularMedia
+Exemplo Entrada: // calcularMedia([10, 20, 30, 40]);
+Exemplo Saída: // 25
+
+Exercício 10: Crie uma função que receba uma palavra e retorne um booleano indicando se a
+palavra é um palíndromo.
+Função: ehPalindromo
+Exemplo Entrada: // ehPalindromo("arara");
+// ehPalindromo("cachorro");
+Exemplo Saída: // true
+// false
+
+Requisito 11: Crie uma função que receba um número inteiro e retorne um booleano
+indicando se o número é primo.
+Função: ehPrimoExemplo Entrada: // ehPrimo(7);
+// ehPrimo(4);
+Exemplo Saída: // true
+// false
+
+Requisito 12: Crie uma função que receba uma frase e retorne a quantidade de palavras que
+ela contém.
+Função: contarPalavras
+Exemplo Entrada: // contarPalavras("Olá, tudo bem?");
+Exemplo Saída: // 3
+
+Requisito 13: Crie uma função que receba duas distâncias (distancia1 e distancia2) e retorne
+qual pessoa está mais próxima, indicando "Pessoa 1" se a primeira distância for menor,
+"Pessoa 2" se a segunda distância for menor, ou "Ambos estão a mesma distância" se as
+distâncias forem iguais.
+Função: calcularDistancia
+Exemplo Entrada: // calcularDistancia(10, 15);
+// calcularDistancia(20, 15);
+// calcularDistancia(30, 30);
+Exemplo Saída: // “Pessoa 1”
+// "Pessoa 2"
+"Ambos estão a mesma distância"
+
+Requisito 14: Crie uma função que receba um array de despesas e retorne um novo array
+contendo "Alto Gasto" para despesas maiores que 100 e "Gasto Controlado" para despesas
+iguais ou menores que 100.
+Função: controleDespesas
+Exemplo Entrada: // const despesas = [150, 80, 200, 60, 120];
+const resultado = controleDespesas(despesas);
+Exemplo Saída: // ["Alto Gasto", "Gasto Controlado", "Alto Gasto", "Gasto Controlado", "Alto
+Gasto"]
+
+Exercício 15: Crie uma função que receba um array de nomes de investimentos que você
+quer fazer e um segundo parâmetro com seu nome.
+Função: gerarListaInvestimentosExemplo Entrada: //const investimentos = [5000, 2000, 15000];
+const nome = "Maria";
+const resultado = gerarListaInvestimentos(investimentos1, nome1);
+Exemplo Saída:
+// [
+{ investimento: 2000, nome: "Maria" },
+{ investimento: 5000, nome: "Maria" },
+{ investimento: 15000, nome: "Maria" }
+]
+
+Exercício 16: Crie uma função que receba uma frase e codifique as vogais de acordo com a
+seguinte substituição: a → 1, e → 2, i → 3, o → 4, u → 5. Crie uma segunda função que
+decodifique a frase, revertendo as substituições.
+Funções: codificar e decodificar
+Exemplo Entrada: // const frase = "a casa e o sol";
+const resultado = codificar(frase);
+const frase2 = "1 c1s2 2 4 s4l";
+const resultado2 = decodificar(frase2);
+Exemplo Saída: // "1 c1s2 2 4 s4l"
+// "a casa e o sol"

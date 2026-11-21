@@ -1,0 +1,98 @@
+body {
+    background-color: #f4ebd0;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Metamorphous", serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+* {
+    font-family: "Metamorphous", serif;
+}
+
+#grand-container {
+    position: fixed;
+    margin: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    max-width: 600px;
+    border: 5px ridge #b48905;
+    border-radius: 8px;
+    width: 3000px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#container {
+    margin: 10px;
+    padding: 10px;
+    max-width: max-content;
+    border: 2px solid #b48905;
+    border-radius: 8px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    position: relative;
+    padding-left: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    width: 16px;  
+    height: 16px; 
+    
+    background-image: url('medievalIcon.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+ul li p {
+    flex: 1;        /* ocupa o espaço disponível */
+    min-width: 0;   /* permite encolher */
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+#button-div {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    background-color: #938f71;
+    border-color: #b48905;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #817e5f;
+    border-color: #b48905;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #b48905;
+    border-color: #b48905;
+    border-radius: 5px;
+    cursor: pointer;
+}

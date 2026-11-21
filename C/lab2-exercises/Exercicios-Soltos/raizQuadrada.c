@@ -3,8 +3,6 @@
 
 long long int find_square_root(int n) {
 
-    long long int doubleN = n * n;
-
     long long int start = 0;
     long long int end = n;
     long long int mid;

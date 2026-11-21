@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montenegrin+Gothic+One&display=swap" rel="stylesheet">
+    <title>Wisdom Test</title>
+</head>
+<body>
+
+    <div class="background-container"></div>
+
+    <div class="content">
+
+        <div id="title-container">
+            <h1>Wisdom Test with King Morgott</h1>
+            <h2> the Last of All Kings</h2>
+        </div>
+        
+        <p
+        onmouseover="changeColor(this, 'yellow')"
+        onmouseout="changeColor(this,'black')"
+        >Insert thy words of wisdom for appreciation and evaluation by the Wise Grace-Given King.</p>
+        
+        
+        <input id="wisdomInput" type="text" placeholder="My thoughts">
+        
+        <button
+        id="wisdomButton"
+        onclick="processMessage()">So I say</button>
+        
+        <p id="morgottsWisdom"></p>
+        
+        <img id="morgottImage" src="morgott2.jpeg" alt="The Omen King"
+        onmouseover="changeImageEasy(this)"
+        onmouseout="changeImageBack(this)"
+        >
+    </div>
+        
+    <script src="functions.js"></script>
+</body>
+</html>
+
